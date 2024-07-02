@@ -11,7 +11,7 @@ let messageInput= document.getElementById("message");
 
 function formValidate(event){
     event.preventDefault();
-    let formData = [];
+    let formData = {};
     let errors = [];
 
     let fullnameContent = fullnameInput.value;
@@ -44,11 +44,11 @@ function formValidate(event){
     }
      
     if (errors.length > 0){
-        console.log("Form submission failed with errors:", errors);
-        console.log(formData);
+        console.log("ERRORS", errors);
+        console.log("COLLECTED DATA", formData);
 
     } else {
-        console.log("Form submission Successful." , formData);
+        console.log("COLLECTED DATA" , formData);
         fullnameInput.value = "";
         emailInput.value = "";
         messageInput.value = "";
