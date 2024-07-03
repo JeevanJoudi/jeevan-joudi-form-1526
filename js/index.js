@@ -44,7 +44,7 @@ function formValidate(event){
     }
      
     if (errors.length > 0){
-        console.log("ERRORS", errors);
+        console.log("ERRORS :", errors);
         console.log("COLLECTED DATA", formData);
 
     } else {
